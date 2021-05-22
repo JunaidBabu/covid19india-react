@@ -16,6 +16,8 @@ const Actions = lazy(() => retry(() => import('./Actions')));
 const Footer = lazy(() => retry(() => import('./Footer')));
 const Level = lazy(() => retry(() => import('./Level')));
 const LevelVaccinated = lazy(() => retry(() => import('./LevelVaccinated')));
+const LevelVaccinated1 = lazy(() => retry(() => import('./LevelVaccinated1')));
+const LevelVaccinated2 = lazy(() => retry(() => import('./LevelVaccinated2')));
 const MapExplorer = lazy(() => retry(() => import('./MapExplorer')));
 const MapSwitcher = lazy(() => retry(() => import('./MapSwitcher')));
 const Minigraphs = lazy(() => retry(() => import('./Minigraphs')));
@@ -130,6 +132,8 @@ function Home() {
             Crowdsourced Resources
           </a>
 
+          {!hideVaccinated && <LevelVaccinated1 data={data['TT']} />}
+          {!hideVaccinated && <LevelVaccinated2 data={data['TT']} />}
           {!hideVaccinated && <LevelVaccinated data={data['TT']} />}
 
           {data && (

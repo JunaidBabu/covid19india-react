@@ -64,6 +64,20 @@ export const STATISTIC_CONFIGS = {
     definition: {key: 'vaccinated'},
     showDelta: true,
   },
+  firstdosevaccinated: {
+    displayName: 'partially vaccinated',
+    color: '#fb5581',
+    format: 'short',
+    definition: {key: 'firstdosevaccinated'},
+    showDelta: true,
+  },
+  seconddosevaccinated: {
+    displayName: 'fully vaccinated',
+    color: '#fb5581',
+    format: 'short',
+    definition: {key: 'seconddosevaccinated'},
+    showDelta: true,
+  },
   tpr: {
     displayName: 'test positivity ratio',
     format: '%',
